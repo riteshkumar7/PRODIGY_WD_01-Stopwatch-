@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stop-Watch</title>
+    <link rel="stylesheet" href="stopwatch.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <p>Stop Watch</p>
+    <div class="container">
+            <div id="box">00:00.00</div>
+            <button onclick="pause()" class="btn"><i class="fa fa-pause"></i>Pause</button>
+            <button onclick="start()" class="btn"><i class="fa fa-play"></i>Start</button>
+            <button onclick="reset()" class="btn"><i class="fa fa-refresh"></i>Reset</button>
+              <button onclick="lap()" class="btn"><i class="fa fa-flag"></i>Lap</button>
+            <div class="Timelap" id="laps"></div>
+    </div>
+</body>
+<script src="stopwatch.js"></script>
+</html>
